@@ -1,0 +1,109 @@
+/* src/pages/Home.css */
+
+/* Hero Section */
+.hero {
+    background-color: #007bff;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    background-image: url('../../public/images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .hero .book-now-button {
+    background-color: #0056b3;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .hero .book-now-button:hover {
+    background-color: #004080;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* About Us Section */
+  .about-us {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .about-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 40px;
+  }
+  
+  .about-us-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .about-us-gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .about-us-gallery img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Slogans Section */
+  .slogans {
+    background-color: #eaeaea;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .slogans h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .slogans-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .slogan-item {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px;
+  }
+  
+  .slogan-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .slogan-item p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
