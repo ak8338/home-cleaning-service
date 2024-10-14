@@ -1,4 +1,3 @@
-/* src/components/Navbar.css */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -9,10 +8,11 @@
   }
   
   .navbar-logo a {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #007bff;
+    font-size: 2.5rem; /* Increased font size */
+    font-weight: 800;  /* Extra bold */
+    color: #007bff;    /* Blue color to match your theme */
     text-decoration: none;
+    letter-spacing: 1px; /* Slight letter spacing for elegance */
   }
   
   .navbar-links {

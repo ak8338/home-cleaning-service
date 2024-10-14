@@ -1,0 +1,114 @@
+/* src/pages/Services.css */
+
+/* Remove underline from links */
+.services-grid a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+  }
+  
+  /* Container for the Services Page */
+  .services-container {
+    padding: 60px 20px;
+    text-align: center;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* Add the background image */
+    background-image: url('../../public/images/services-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay; /* Overlay effect */
+    background-color: rgba(46, 106, 227, 0.266); /* Darkens the background for fading effect */
+    color: white;
+  }
+  
+  /* Heading for Featured Services */
+  .featured-services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  
+  .featured-services h2::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background-color: #007bff;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Grid Layout for Services */
+  .services-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: stretch; /* Ensure all cards stretch to the same height */
+  }
+  
+  /* Individual Service Cards */
+  .cleaning-card {
+    background-color: white;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px; /* Reduced padding */
+    width: 280px; /* Slightly narrower width */
+    height: 200px; /* Reduced height for a more compact layout */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .cleaning-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title of the card */
+  .cleaning-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  
+  /* Description of the card with text overflow handling */
+  .cleaning-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px; /* Reduced bottom margin */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limits to 3 lines */
+    -webkit-box-orient: vertical;
+  }
+  
+  /* Price or the last item in the card */
+  .cleaning-card p:last-child {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-top: auto; /* Push the price to the bottom if there's extra space */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .services-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
