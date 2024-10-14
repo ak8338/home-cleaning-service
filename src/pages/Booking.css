@@ -1,0 +1,123 @@
+/* src/pages/Booking.css */
+.booking-container {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    min-height: 80vh;
+  }
+  
+  .booking-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  .booking-form {
+    display: inline-block;
+    text-align: left;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .booking-form label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .booking-form input,
+  .booking-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  /* Prevent form shrinking when DatePicker is open */
+  .booking-form .react-datepicker-wrapper {
+    width: 100%;
+  }
+  
+  .booking-form .react-datepicker__input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .submit-button {
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+ /* General Calendar Popup Styling */
+.react-datepicker {
+    font-size: 1rem; /* General font size for the calendar */
+  }
+  
+  .react-datepicker__header {
+    background-color: #007bff; /* Header background color */
+    color: white;
+  }
+  
+  /* Adjust the size of the current month and year displayed in the header */
+  .react-datepicker__current-month {
+    font-size: 1rem !important; /* Force smaller font size with !important */
+    font-weight: normal !important; /* Reduce boldness with !important */
+  }
+  
+  /* Month and Year dropdown selectors */
+  .react-datepicker__month-container {
+    font-size: 0.875rem !important; /* Reduces the size of the month/year selector */
+  }
+  
+  .react-datepicker__year-container {
+    font-size: 0.875rem !important; /* Reduces the size of the year selector */
+  }
+  
+  /* Month and Year dropdown menus */
+  .react-datepicker__month-dropdown,
+  .react-datepicker__year-dropdown {
+    font-size: 0.875rem !important; /* Further reduce the size of the month and year dropdown options */
+  }
+  
+  /* Day names, days, and times in the calendar */
+  .react-datepicker__day-name,
+  .react-datepicker__day,
+  .react-datepicker__time-name {
+    width: 2.5rem;
+    line-height: 2.5rem;
+  }
+  
+  .react-datepicker__day:hover {
+    background-color: #0056b3; /* Hover effect for day selection */
+    color: white;
+  }
+  
+  /* Time picker adjustments */
+  .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box {
+    width: 100px; /* Adjust time box width */
+  }
+  
+  .react-datepicker__time-list-item:hover {
+    background-color: #007bff; /* Hover effect for time */
+    color: white;
+  }
+  
