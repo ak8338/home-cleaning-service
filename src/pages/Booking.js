@@ -1,5 +1,5 @@
 // src/pages/Booking.js
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
@@ -15,6 +15,7 @@ function Booking() {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [address, setAddress] = useState('');
   const [selectedDate, setSelectedDate] = useState(new Date());
+  const [showBanner, setShowBanner] = useState(false); // Track if the banner is visible
 
   const serviceOptions = [
     'Basic Cleaning',
@@ -28,12 +29,23 @@ function Booking() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add your form submission logic here
-    alert(`Booking confirmed for ${fullName} on ${selectedDate}`);
+    // Display the success banner when booking is placed
+    setShowBanner(true);
+
+    // Optionally, hide the banner after a few seconds
+    setTimeout(() => {
+      setShowBanner(false);
+    }, 1000); // Banner will disappear after 5 seconds
   };
 
   return (
     <div className="booking-container">
+      {showBanner && (
+        <div className="success-banner">
+          Order placed successfully!
+        </div>
+      )}
+      
       <h2>Book Your Cleaning Service</h2>
       <form className="booking-form" onSubmit={handleSubmit}>
         
@@ -54,7 +66,7 @@ function Booking() {
           id="phone-number"
           value={phoneNumber}
           onChange={(e) => setPhoneNumber(e.target.value)}
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" /* Validates US phone numbers */
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
           placeholder="123-456-7890"
           required
         />
@@ -94,7 +106,7 @@ function Booking() {
           timeFormat="HH:mm"
           timeIntervals={30}
           dateFormat="MMMM d, yyyy h:mm aa"
-          minDate={new Date()} /* Prevents past date selection */
+          minDate={new Date()}
           required
         />
 
