@@ -76,7 +76,85 @@
     background-color: #007bff; /* Header background color */
     color: white;
   }
-  
+  /* src/pages/Booking.css */
+.booking-container {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+  min-height: 80vh;
+}
+
+.booking-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.booking-form {
+  display: inline-block;
+  text-align: left;
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.booking-form .react-datepicker-wrapper {
+  width: 100%;
+}
+
+.booking-form .react-datepicker__input-container input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Success Banner Styling */
+.success-banner {
+  background-color: #007bff; /* Blue color for success message */
+  color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Submit Button */
+.submit-button {
+  padding: 12px 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
   /* Adjust the size of the current month and year displayed in the header */
   .react-datepicker__current-month {
     font-size: 1rem !important; /* Force smaller font size with !important */
